@@ -1,0 +1,187 @@
+:root{
+    --maincolor:#0000ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s linear;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    right: 0;
+    left:0;
+    box-shadow: 0 .5rem .5rem rgb(0,0,0,.1);
+}
+.header #logo img{
+    width: 100px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2.5rem;
+}
+.header .navbar a:hover{
+    color: black;
+}
+.header .icons{
+    font-size: 2rem;
+    margin-left:4rem;
+}
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: var(--maincolor);
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+    position: absolute;
+    top: 110%;
+    right: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+    padding: 1.5em;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+.header .search-box.active{
+    right: 2rem;
+}
+.header .navbar.active{
+    left: 0;
+}
+.main-background{
+    background: url(sasha-kaunas-xEaAoizNFV8-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-text{
+    text-align: center;
+
+}
+.main-text h2{
+    color: white;
+    font-size: 30px;
+}
+.main-text h1{
+    color: white;
+    font-size: 38px;
+}
+.main-text h1 span{
+    color: var(--maincolor);
+
+}
+.book-section{
+    padding: 2rem 7%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-book{
+   background: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+}
+.inner-book input{
+    padding: 1rem 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .header .icons #menu-bars{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 100%;
+        background: var(--maincolor);
+    }
+    .header .navbar a{
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        background: white;
+        border-radius:10px;
+    }
+}
